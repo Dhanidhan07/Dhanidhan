@@ -1,24 +1,6 @@
+import { posts } from "../lib/posts";
 export default function Home() {
-  const posts = [
-    {
-      title: "Halo, ini DhaniDhan.",
-      date: "24 Agustus 2026",
-      excerpt:
-        "Catatan pertama tentang kenapa saya membuat ruang kecil ini di internet.",
-    },
-    {
-      title: "Belajar sesuatu, lalu menuliskannya.",
-      date: "20 Agustus 2026",
-      excerpt:
-        "Kadang cara terbaik memahami sesuatu adalah mencoba menjelaskannya kembali.",
-    },
-    {
-      title: "Sedikit catatan dari perjalanan.",
-      date: "15 Agustus 2026",
-      excerpt:
-        "Hal-hal kecil yang menarik untuk disimpan, sebelum akhirnya terlupakan.",
-    },
-  ];
+ 
 
   return (
     <main className="min-h-screen bg-[#fafafa] text-zinc-900">
