@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { posts } from "../../lib/posts";
+
+export const metadata: Metadata = {
+  title: "Blog",
+  description:
+    "Tulisan, catatan, pengalaman, dan hal-hal yang dipelajari di DhaniDhan.",
+};
 
 export default function BlogPage() {
   return (
