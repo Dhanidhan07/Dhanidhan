@@ -1,3 +1,5 @@
+import { posts } from "../../lib/posts";
+
 export default function BlogPage() {
   return (
     <main className="min-h-screen bg-[#fafafa] text-zinc-900">
@@ -11,10 +13,12 @@ export default function BlogPage() {
             <a href="/blog" className="text-black">
               Blog
             </a>
-            <a href="/#projects" className="hover:text-black">
+
+            <a href="/#projects" className="transition hover:text-black">
               Projects
             </a>
-            <a href="/#about" className="hover:text-black">
+
+            <a href="/#about" className="transition hover:text-black">
               About
             </a>
           </nav>
@@ -36,44 +40,28 @@ export default function BlogPage() {
         </section>
 
         <section className="border-t border-zinc-200 pb-20">
-          <article className="border-b border-zinc-200 py-9">
-            <div className="grid gap-3 sm:grid-cols-[160px_1fr]">
-              <p className="text-sm text-zinc-400">24 Agustus 2026</p>
+          {posts.map((post) => (
+            <article
+              key={post.slug}
+              className="border-b border-zinc-200 py-9"
+            >
+              <div className="grid gap-3 sm:grid-cols-[160px_1fr]">
+                <p className="text-sm text-zinc-400">{post.date}</p>
 
-              <div>
-                <a
-  href="/blog/halo-ini-dhanidhan"
-  className="group block"
->
-  <h2 className="text-2xl font-medium tracking-tight transition group-hover:text-zinc-500">
-    Halo, ini DhaniDhan.
-  </h2>
-</a>
+                <div>
+                  <a href={`/blog/${post.slug}`} className="group block">
+                    <h2 className="text-2xl font-medium tracking-tight transition group-hover:text-zinc-500">
+                      {post.title}
+                    </h2>
+                  </a>
 
-                <p className="mt-2 max-w-2xl leading-7 text-zinc-600">
-                  Catatan pertama tentang kenapa saya membuat ruang kecil ini
-                  di internet.
-                </p>
+                  <p className="mt-2 max-w-2xl leading-7 text-zinc-600">
+                    {post.excerpt}
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-
-          <article className="border-b border-zinc-200 py-9">
-            <div className="grid gap-3 sm:grid-cols-[160px_1fr]">
-              <p className="text-sm text-zinc-400">20 Agustus 2026</p>
-
-              <div>
-                <h2 className="text-2xl font-medium tracking-tight">
-                  Belajar sesuatu, lalu menuliskannya.
-                </h2>
-
-                <p className="mt-2 max-w-2xl leading-7 text-zinc-600">
-                  Kadang cara terbaik memahami sesuatu adalah mencoba
-                  menjelaskannya kembali.
-                </p>
-              </div>
-            </div>
-          </article>
+            </article>
+          ))}
         </section>
 
         <footer className="border-t border-zinc-200 py-10 text-sm text-zinc-500">
