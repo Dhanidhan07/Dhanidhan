@@ -11,27 +11,27 @@ export default function Home() {
           </a>
 
           <nav className="flex items-center gap-5 text-sm text-zinc-600 dark:text-zinc-300">
-            <a
-              href="/blog"
-              className="transition hover:text-zinc-950 dark:hover:text-white"
-            >
-              Blog
-            </a>
+  <a
+    href="/blog"
+    className="transition hover:text-zinc-950 dark:hover:text-white"
+  >
+    Blog
+  </a>
 
-            <a
-              href="#projects"
-              className="transition hover:text-zinc-950 dark:hover:text-white"
-            >
-              Projects
-            </a>
+  <a
+    href="/projects"
+    className="transition hover:text-zinc-950 dark:hover:text-white"
+  >
+    Projects
+  </a>
 
-            <a
-              href="#about"
-              className="transition hover:text-zinc-950 dark:hover:text-white"
-            >
-              About
-            </a>
-          </nav>
+  <a
+    href="/about"
+    className="transition hover:text-zinc-950 dark:hover:text-white"
+  >
+    About
+  </a>
+</nav>
         </header>
 
         {/* Hero */}
