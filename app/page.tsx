@@ -55,7 +55,7 @@ export default function Home() {
 
             <div className="mt-10 flex gap-6 text-sm font-medium">
               <a
-                href="/writing"
+                href="#writing"
                 className="border-b border-zinc-900 pb-1 transition hover:text-zinc-500 dark:border-zinc-100 dark:hover:text-zinc-400"
               >
                 Baca tulisan ↓
