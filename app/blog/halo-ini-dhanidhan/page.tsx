@@ -4,6 +4,30 @@ export const metadata: Metadata = {
   title: "Halo, ini DhaniDhan",
   description:
     "Catatan pertama tentang kenapa saya membuat ruang kecil ini di internet.",
+
+  openGraph: {
+    title: "Halo, ini DhaniDhan",
+    description:
+      "Catatan pertama tentang kenapa saya membuat ruang kecil ini di internet.",
+    type: "article",
+    url: "/blog/halo-ini-dhanidhan",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "DhaniDhan",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Halo, ini DhaniDhan",
+    description:
+      "Catatan pertama tentang kenapa saya membuat ruang kecil ini di internet.",
+    images: ["/opengraph-image"],
+  },
 };
 
 export default function ArticlePage() {
