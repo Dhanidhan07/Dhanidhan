@@ -13,12 +13,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://dhanidhan.dhanilatif.workers.dev"),
+
   title: {
     default: "DhaniDhan",
     template: "%s | DhaniDhan",
   },
+
   description:
     "Catatan pribadi tentang pengalaman, proyek, hal yang dipelajari, dan apa pun yang layak disimpan.",
+
+  openGraph: {
+    title: "DhaniDhan",
+    description:
+      "Catatan pribadi tentang pengalaman, proyek, hal yang dipelajari, dan apa pun yang layak disimpan.",
+    url: "https://dhanidhan.dhanilatif.workers.dev",
+    siteName: "DhaniDhan",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "DhaniDhan",
+    description:
+      "Catatan pribadi tentang pengalaman, proyek, hal yang dipelajari, dan apa pun yang layak disimpan.",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
