@@ -35,13 +35,13 @@ export default function Home() {
         </header>
 
         {/* Hero */}
-        <section className="flex min-h-[72vh] items-center">
-          <div className="max-w-3xl py-20">
+        <section className="flex min-h-[60vh] items-center sm:min-h[72vh]">
+          <div className="max-w-3xl py-12 sm:py-20">
             <p className="mb-5 text-sm font-medium text-zinc-500 dark:text-zinc-400">
               PERSONAL NOTES · PROJECTS · THOUGHTS
             </p>
 
-            <h1 className="text-5xl font-semibold leading-[1.08] tracking-tight sm:text-7xl">
+            <h1 className="text-4xl font-semibold leading-[1.08] tracking-tight sm:text-7xl">
               Hai, saya Dhani.
               <br />
               Saya menulis apa yang ingin saya ingat.
